@@ -16,10 +16,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Routes>
-        <Route path="/" element={<Form1></Form1>}></Route>
-        <Route path="/form2" element={<Form2></Form2>}></Route>
-      </Routes>
+      <HomePage></HomePage>
       <Footer></Footer>
     </>
   );
