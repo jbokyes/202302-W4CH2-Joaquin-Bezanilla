@@ -1,6 +1,5 @@
 import React from "react";
-
-export function Form2() {
+export function Form2(): JSX.Element {
   return (
     <form>
       <label>
