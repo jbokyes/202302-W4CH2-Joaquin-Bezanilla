@@ -1,5 +1,10 @@
 import React from "react";
-export function Form2(): JSX.Element {
+import { useNavigate } from "react-router";
+export function Form2() {
+  function handleClick() {
+    const navigate = useNavigate();
+    navigate("");
+  }
   return (
     <form>
       <label>
@@ -14,7 +19,7 @@ export function Form2(): JSX.Element {
         Repeat password:
         <input type="text" name="repeatpassword" />
       </label>
-      <input type="submit" value="Submit" />
+      <input onClick={handleClick} type="submit" value="Submit" />
     </form>
   );
 }
