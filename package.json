@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test jest--watchAll --coverage",
     "eject": "react-scripts eject",
     "test:prod": "jest --watchAll --coverage --watchAll=false"
   },
