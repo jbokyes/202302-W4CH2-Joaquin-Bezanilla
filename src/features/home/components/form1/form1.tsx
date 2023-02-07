@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export function Form1() {
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate("/form2");
+  }
   return (
     <form>
       <label>
@@ -24,7 +29,7 @@ export function Form1() {
         <input type="checkbox" />
         Quiero recibir notificaciones por correo
       </label>
-      <input type="submit" value="Submit" />
+      <input onClick={handleClick} type="submit" value="Submit" />
     </form>
   );
 }
